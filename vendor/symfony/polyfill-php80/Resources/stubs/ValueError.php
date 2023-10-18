@@ -9,8 +9,8 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit\Exception;
-
-class JsonException extends \JsonException implements ExceptionInterface
-{
+if (\PHP_VERSION_ID < 80000) {
+    class ValueError extends Error
+    {
+    }
 }

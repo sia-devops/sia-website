@@ -9,8 +9,8 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit\Exception;
-
-class UnexpectedValueException extends \UnexpectedValueException implements ExceptionInterface
-{
+if (\PHP_VERSION_ID < 80000 && extension_loaded('tokenizer')) {
+    class PhpToken extends Symfony\Polyfill\Php80\PhpToken
+    {
+    }
 }

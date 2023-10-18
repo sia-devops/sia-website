@@ -9,8 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Component\BrowserKit\Exception;
-
-class LogicException extends \LogicException implements ExceptionInterface
-{
+if (\PHP_VERSION_ID < 80000) {
+    interface Stringable
+    {
+        /**
+         * @return string
+         */
+        public function __toString();
+    }
 }
