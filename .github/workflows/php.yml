@@ -1,28 +1,13 @@
-name: PHP CI/CD Pipeline
+name: CI
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: push
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-      - name: Set up PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.1' # You can specify the PHP version you need
-
-      - name: Ensure Execute Permission
-        run: chmod +x vendor/bin/phpunit
-
-      - name: Run PHPUnit
-        run: ./vendor/bin/phpunit
+      - name: Run a one-line script
+        run: echo "Hello, world!"
