@@ -1,9 +1,0 @@
-{
-    "name": "sia-website",
-    "version": "0.2.0",
-    "description": "package.json",
-    "dependencies": {
-      "@primer/css": "17.0.1"
-    },
-    "license": "MIT"
-  }
