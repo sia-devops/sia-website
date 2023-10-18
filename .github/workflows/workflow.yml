@@ -16,4 +16,7 @@ jobs:
         run: echo "Test succeed"
 
       - name: Build
-        run : echo "https:/sia-devops/sia-website.git/.github.io/:"
+        run : echo "Build successfully"
+
+      - name: Deploy
+        run: echo "https://htmlpreview.github.io/?https://github.com/sia-devops/sia-website/blob/main/src/index.html"
