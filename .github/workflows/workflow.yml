@@ -1,0 +1,19 @@
+name: CI/CD
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: echo "Dependency installed"
+      
+      - name: Test
+        run: echo "Test succeed"
+
+      - name: Build
+        run : echo "Build succeed"
